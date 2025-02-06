@@ -2,7 +2,7 @@
 @font-face { font-family: Anggota; src: url('media/a-anggota-font/Anggota-d9v9E.otf'); } 
 
 * {
-    font-family: 'Comic Sans MS', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Comic Sans MS', Calibri, 'Trebuchet MS', fantasy;
 }
 
 /* Name the grid items for proper website layout */
