@@ -271,7 +271,8 @@ aside {
 
 }
 
-/* try to center the nav-toggle button at extremely low viewport-widths */
+/*
+try to center the nav-toggle button at extremely low viewport-widths
 
 @media all and (max-width: 365px) {
 
@@ -281,6 +282,7 @@ aside {
     }
 
 }
+*/
 
 
 /* Set the layout for the medium-width page */
