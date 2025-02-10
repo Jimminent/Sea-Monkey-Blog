@@ -54,7 +54,7 @@ body {
 
  /* Set default behavior for images, paragraphs, article header, and nav items */
 
-#article-image {
+.article-image {
     min-width: 0px;
     width: 98%; 
     height: auto;
@@ -107,7 +107,7 @@ article h1 {
     text-align: justify;
 }
 
-#title-image-container {
+.square-image-container {
     display: flex;
     background-color: rgba(215, 0, 215, 30%);
     box-shadow: inset 0px 0px 0.5em 0.5em rgba(215, 0, 215, 30%);
@@ -115,7 +115,7 @@ article h1 {
     justify-content: center;
 }
 
-#title-image {
+.square-image {
     min-width: 0px;
     width: 50%;
     height: auto;
@@ -410,9 +410,9 @@ try to center the nav-toggle button at extremely low viewport-widths
         font-size: 1.5em;
     }
 
-    /* Modify behavior for the article image (not title image) to take up the full width of the article */
+    /* Modify behavior for the article image (not purple image) to take up the full width of the article */
 
-    #article-image {
+    .article-image {
         width: 100%;
     }
 
