@@ -378,12 +378,25 @@ try to center the nav-toggle button at extremely low viewport-widths
 @media all and (min-width: 900px) {
 
     body {
-       grid-template-columns: 20% auto 20%;
+       grid-template-columns: auto minmax(auto,1000px) auto;
        grid-template-rows: auto auto auto;    
        grid-template-areas: 
           "head head head" 
           "nav main aside"
           "foot foot foot";
+    }
+
+    #primary-nav, aside {
+        width: 20vw;
+        max-width: 340px;
+    }
+
+    #primary-nav {
+        margin-left: auto;
+    }
+
+    aside {
+        margin-right: auto;
     }
 
     #primary-nav a {
@@ -421,7 +434,7 @@ try to center the nav-toggle button at extremely low viewport-widths
         font-size: 1.5em;
     }
 
-    /* Modify behavior for the article image (not purple image) to take up the full width of the article */
+    /* Modify behavior for the images to take up the full width of the article */
 
     .article-image, .square-image-container {
         width: 100%;
