@@ -423,7 +423,7 @@ try to center the nav-toggle button at extremely low viewport-widths
 
     /* Modify behavior for the article image (not purple image) to take up the full width of the article */
 
-    .article-image {
+    .article-image, .square-image-container {
         width: 100%;
     }
 
