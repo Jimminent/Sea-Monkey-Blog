@@ -1,1 +1,248 @@
-ECHO is on.
+/* Add a free-to-use custom font to the webpage */
+@font-face { font-family: Anggota; src: url('../media/a-anggota-font/Anggota-d9v9E.otf'); } 
+
+* {
+    font-family: 'Comic Sans MS', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Name the grid items for proper website layout */
+
+.page-header {
+    grid-area: head;
+}
+
+#primary-nav {
+    grid-area: nav;
+}
+
+.welcome-message {
+    grid-area: message;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: foot;
+}
+
+/* Set the default layout of the home page (mobile) */
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "head"
+        "message"
+        "main"
+        "aside"
+        "foot";     
+ }
+
+ aside, footer {
+    text-align: center;
+ }
+
+ .page-header {
+    margin: auto 0;
+ }
+
+ /* Set default behavior for images, main header, card links, and nav items */
+
+.post-card img {
+    min-width: 0px;
+    width: 100%; 
+    height: auto;
+ }
+
+ .post-card a {
+    text-decoration: none;
+    color: black;
+ }
+
+main > h1 {
+    padding-left: 0.25em;
+ }
+
+ #primary-nav li {
+    list-style: none;
+ }
+
+ nav a {
+    text-decoration: none;
+    color: black
+ }
+
+ /* Setting #menu and #nav-toggle here avoids issues in larger sizes, where the burger menu is not needed. Remember to experiment placing this setting in different sizes later, to conform to mobile-first syntax. */
+
+ #menu, #nav-toggle {
+    display: none;
+}
+
+/* Create a dropdown box for the mobile nav section */
+
+@media all and (max-width: 659px) {
+
+    #primary-nav {
+        box-sizing: border-box;
+        position: absolute;
+        right: 1em;
+        top: 0.1em;
+        height: 80px;
+        width: 90px;
+    }
+
+    #nav-toggle {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px rgb(47, 47, 165);
+        border-radius: 10%;
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+    }
+
+    .burger {
+        height: 33%;
+        background-color: rgb(47, 47, 165);
+        margin: 8% 6%;
+        border: 1px solid rgb(47, 47, 165);
+        border-radius: 20%;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    #menu:checked ~ .nav-items {
+        display: block;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        border: 0.5em solid aqua;
+        border-radius: 10%;
+    }
+
+    .nav-items li {
+        background-color: aqua;
+        padding: 5px 0;
+    }
+
+    .nav-items li:hover {
+        background-color: rgb(224, 208, 115);
+    }
+
+    #nav-toggle:active {
+        background-color: rgb(224, 208, 115);
+    }
+
+    /* Move the page header off the edge of the body when in small-form */
+
+    .page-header {
+        padding-left: 0.5em;
+    }
+    
+}
+
+/* Cause the nav-toggle button and header text to shrink below a certain screen width */
+
+@media all and (max-width: 459px) {
+
+    #primary-nav {
+        width: 15vw;
+        height: 13vw;
+        top: 1vw;
+        right: 2.8em;
+    }
+
+    .nav-items {
+        width: fit-content;
+        
+    }
+
+    .page-header {
+        padding-right: 27vw;
+        font-size: 0.8em;
+    }
+
+}
+
+/* Set the background for the page header and footer, as well as the body */
+
+.page-header, footer {
+    background: linear-gradient(aqua,blue);
+}
+
+body {
+    background-color: rgb(215, 250, 244);
+}
+
+/* Set the layout for the medium-width page */
+ 
+@media all and (min-width: 660px) {
+
+    body {
+       grid-template-columns: auto;
+       column-gap: 0.5em;
+       grid-template-rows: auto auto auto auto auto auto auto;    
+       grid-template-areas: 
+          "head" 
+          "nav"
+          "message"
+          "main"
+          "aside"
+          "foot";
+    }
+
+    .page-header {
+        text-align: center;
+    }
+
+    #primary-nav {
+        background-color: rgb(215, 250, 244);
+    }
+
+    #primary-nav {
+        position: sticky;
+        top: 0;
+    }
+
+    .nav-items {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2%;
+    }
+
+    #primary-nav li {
+        padding: 0.5em 0;
+    }
+
+    .square-image-container {
+        width: 98%;
+    }
+
+    /* apply the same link colors from the secondary nav to the primary nav */
+
+    #primary-nav a {
+        background-color: aqua;
+        border-radius: 0.2em;
+        color: black;
+        padding: 1em;
+    }
+    
+    #primary-nav a:hover {
+        background-color: rgba(247, 214, 142, 0.884);
+        color: rgb(57, 58, 59);
+    }
+
+}

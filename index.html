@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life of a Sea Monkey: Home</title>
+    <link rel="stylesheet" href="homepage-style.css">
+    <title>Home: Life of a Sea Monkey</title>
     <link rel="icon" type="image/x-icon" href="../media/favicon.ico">
 </head>
 <body>
 
-    <header>
+    <header class="page-header">
         <h1>Life of a Sea Monkey</h1>
     </header>
+
+    <nav id="primary-nav">
+
+        <input type="checkbox" id="menu">
+        <label id="nav-toggle" for="menu">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div> </label>
+        
+
+        <ul class="nav-items">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../posts.html">Posts</a></li>
+            <li><a href="../donate.html">Donate</a></li>
+        </ul>
+
+    </nav>
 
     <section class="welcome-message">
         <p>Hi there! I'm Kin, the sea monkey! Come join me and my family as we navigate life in our 16oz world!</p>
     </section>
 
     <main>
-        
+
         <h1>Recent Posts</h1>
 
-        <div class="recent-post-card">
+        <div class="post-card">
             <a href="/BlogPosts/blogPost1.html">
                 <p>January 26, 2025</p>
                 <img src="../media/fullTank.jpg" alt="Recent Post Image">
@@ -29,6 +47,25 @@
         </div>
 
     </main>
+
+    <aside>
+
+        <form action="" target="_blank" method="post" id="email-signup-box">
+            
+            <p>
+                Sign up today for weekly updates from the tank!
+            </p>
+
+            <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            </div>
+
+            <input type="submit" value="Sign up">
+            
+        </form>
+
+    </aside>
     
     <footer>
         <p>

@@ -7,7 +7,6 @@
 
 /* Name the grid items for proper website layout */
 
-
 .page-header {
     grid-area: head;
 }
@@ -28,7 +27,7 @@ footer {
     grid-area: foot;
 }
 
-/* Set the default layout of the page (mobile) */
+/* Set the default layout of the blog-post page (mobile) */
 
 body {
     box-sizing: border-box;
@@ -228,11 +227,11 @@ aside {
     }
 
     .nav-items li:hover {
-        background-color: rgba(247, 231, 142, 0.884);
+        background-color: rgb(224, 208, 115);
     }
 
     #nav-toggle:active {
-        background-color: rgb(177, 250, 250);
+        background-color: rgb(224, 208, 115);
     }
 
     /* Move the page header off the edge of the body when in small-form */
