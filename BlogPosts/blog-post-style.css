@@ -8,7 +8,7 @@
 /* Name the grid items for proper website layout */
 
 
-header {
+.page-header {
     grid-area: head;
 }
 
@@ -48,7 +48,7 @@ body {
     text-align: center;
  }
 
- header {
+ .page-header {
     margin: auto 0;
  }
 
@@ -82,9 +82,9 @@ body {
     display: none;
 }
 
-/* Set the background for the header and footer, as well as the body */
+/* Set the background for the page header and footer, as well as the body */
 
-header, footer {
+.page-header, footer {
     background: linear-gradient(aqua,blue);
 }
 
@@ -235,9 +235,9 @@ aside {
         background-color: rgb(177, 250, 250);
     }
 
-    /* Move the header off the edge of the body when in small-form */
+    /* Move the page header off the edge of the body when in small-form */
 
-    header {
+    .page-header {
         padding-left: 0.5em;
     }
     
@@ -259,7 +259,7 @@ aside {
         
     }
 
-    header {
+    .page-header {
         padding-right: 27vw;
         font-size: 0.8em;
     }
@@ -296,7 +296,7 @@ try to center the nav-toggle button at extremely low viewport-widths
           "foot foot";
     }
 
-    header {
+    .page-header {
         text-align: center;
     }
 
