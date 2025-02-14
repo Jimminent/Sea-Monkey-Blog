@@ -150,11 +150,6 @@ article {
     color: black;
 }
 
-.background-wrapper {
-    background-image: url(media/pawel-czerwinski-AV06Lm42mVo-unsplash.jpg);
-    border-radius: 0.5em;
-}
-
 #secondary-nav a {
     background-color: aqua;
     border-radius: 0.2em;
