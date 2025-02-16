@@ -47,17 +47,7 @@ body {
     text-align: center;
  }
 
- .page-header {
-    margin: auto 0;
- }
-
  /* Set default behavior for images, paragraphs, article header, and nav items */
-
-.article-image {
-    min-width: 0px;
-    width: 98%; 
-    height: auto;
- }
 
  p {
     padding-left: 0.5em;
@@ -76,10 +66,6 @@ body {
     text-decoration: none;
     color: black
  }
-
- #menu, #nav-toggle {
-    display: none;
-}
 
 /* Set the background for the page header and footer, as well as the body */
 
@@ -105,6 +91,12 @@ article h1 {
 .meat {
     text-align: justify;
 }
+
+.article-image {
+    min-width: 0px;
+    width: 98%; 
+    height: auto;
+ }
 
 .square-image-container {
     display: flex;
@@ -176,108 +168,6 @@ aside {
     border-radius: 0.5em;
     
 }
-
- /* Create a dropdown box for the mobile nav section */
-
- @media all and (max-width: 659px) {
-
-    #primary-nav {
-        box-sizing: border-box;
-        position: absolute;
-        right: 1em;
-        top: 0.1em;
-        height: 80px;
-        width: 90px;
-    }
-
-    #nav-toggle {
-        display: flex;
-        flex-direction: column;
-        border: solid 2px rgb(47, 47, 165);
-        border-radius: 10%;
-        width: 100%;
-        height: 100%;
-        background-color: aqua;
-    }
-
-    .burger {
-        height: 33%;
-        background-color: rgb(47, 47, 165);
-        margin: 8% 6%;
-        border: 1px solid rgb(47, 47, 165);
-        border-radius: 20%;
-    }
-
-    .nav-items {
-        display: none;
-    }
-
-    #menu:checked ~ .nav-items {
-        display: block;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-        border: 0.5em solid aqua;
-        border-radius: 10%;
-    }
-
-    .nav-items li {
-        background-color: aqua;
-        padding: 5px 0;
-    }
-
-    .nav-items li:hover {
-        background-color: rgb(224, 208, 115);
-    }
-
-    #nav-toggle:active {
-        background-color: rgb(224, 208, 115);
-    }
-
-    /* Move the page header off the edge of the body when in small-form */
-
-    .page-header {
-        padding-left: 0.5em;
-    }
-    
-}
-
-/* Cause the nav-toggle button and header text to shrink below a certain screen width */
-
-@media all and (max-width: 459px) {
-
-    #primary-nav {
-        width: 15vw;
-        height: 13vw;
-        top: 1vw;
-        right: 2.8em;
-    }
-
-    .nav-items {
-        width: fit-content;
-        
-    }
-
-    .page-header {
-        padding-right: 27vw;
-        font-size: 0.8em;
-    }
-
-}
-
-/*
-try to center the nav-toggle button at extremely low viewport-widths
-
-@media all and (max-width: 365px) {
-
-    #primary-nav {
-        top: 2em;
-        right: 2.8em;
-    }
-
-}
-*/
-
 
 /* Set the layout for the medium-width page */
  

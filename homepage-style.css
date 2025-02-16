@@ -78,7 +78,7 @@ body {
     color: black;
  }
 
-li {
+#primary-nav li {
     list-style: none;
  }
 
@@ -86,110 +86,6 @@ li {
     text-decoration: none;
     color: black
  }
-
-/* Create a dropdown box for the mobile nav section */
-
-#menu, #nav-toggle {
-    display: none;
-}
-
-@media all and (max-width: 659px) {
-
-    .page-header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    #nav-dropdown {
-        flex-shrink: 0;
-        box-sizing: border-box;
-        /* position: absolute;
-        right: 1em; */
-        height: 80px;
-        width: 90px;
-    }
-
-    #nav-toggle {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 8%;
-        border: solid 2px rgb(47, 47, 165);
-        border-radius: 10%;
-        width: 100%;
-        height: 100%;
-        background-color: aqua;
-    }
-
-    .burger {
-        height: 16%;
-        width: 90%;
-        background-color: rgb(47, 47, 165);
-        border: 1% solid rgb(47, 47, 165);
-        border-radius: 20%;
-    }
-
-    .nav-items {
-        display: none;
-    }
-
-    #menu:checked ~ .nav-items {
-        display: block;
-        position: relative;
-        z-index: 10;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-        border: 0.5em solid aqua;
-        border-radius: 10%;
-    }
-
-    .nav-items li {
-        background-color: aqua;
-        padding: 5px 0;
-    }
-
-    .nav-items li:hover {
-        background-color: rgb(224, 208, 115);
-    }
-
-    #nav-toggle:active {
-        background-color: rgb(224, 208, 115);
-    }
-
-    /* Move the page header off the edge of the body when in small-form */
-
-    .page-header {
-        padding-left: 0.5em;
-    }
-    
-}
-
-/* Cause the nav-toggle button and header text to shrink below a certain screen width */
-
-/* @media all and (max-width: 459px) {
-
-    #nav-dropdown {
-        width: 15vw;
-        height: 13vw;
-        top: 1vw;
-        right: 2.8em;
-    }
-
-    .nav-items {
-        width: fit-content;
-        
-    }
-
-    .page-header {
-        padding-right: 27vw;
-        font-size: 0.8em;
-    }
-
-} */
 
 /* Set the background for the page header and footer, as well as the body */
 
@@ -204,10 +100,6 @@ body {
 /* Set the layout for the medium-width page */
  
 @media all and (min-width: 660px) {
-
-    #nav-dropdown {
-        display: none;
-    }
 
     body {
        grid-template-columns: auto;
