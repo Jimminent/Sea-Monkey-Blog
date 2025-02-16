@@ -52,28 +52,33 @@ body {
     text-align: center;
  }
 
- .page-header {
-    margin: auto 0;
- }
+ /* Set default behavior for images, card links, and nav items */
 
- /* Set default behavior for images, main header, card links, and nav items */
-
-.post-card img {
+.post-card-img {
     min-width: 0px;
     width: 100%; 
     height: auto;
  }
+
+ .square-image-container {
+    display: flex;
+    background-color: rgba(215, 0, 215, 30%);
+    box-shadow: inset 0px 0px 0.5em 0.5em rgba(215, 0, 215, 30%);
+    justify-content: center;
+}
+
+.square-image {
+    min-width: 0px;
+    width: 50%;
+    height: auto;
+}
 
  .post-card a {
     text-decoration: none;
     color: black;
  }
 
-main > h1 {
-    padding-left: 0.25em;
- }
-
- #primary-nav li {
+li {
     list-style: none;
  }
 
@@ -82,28 +87,36 @@ main > h1 {
     color: black
  }
 
- /* Setting #menu and #nav-toggle here avoids issues in larger sizes, where the burger menu is not needed. Remember to experiment placing this setting in different sizes later, to conform to mobile-first syntax. */
+/* Create a dropdown box for the mobile nav section */
 
- #menu, #nav-toggle {
+#menu, #nav-toggle {
     display: none;
 }
 
-/* Create a dropdown box for the mobile nav section */
-
 @media all and (max-width: 659px) {
 
-    #primary-nav {
+    .page-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #nav-dropdown {
+        flex-shrink: 0;
         box-sizing: border-box;
-        position: absolute;
-        right: 1em;
-        top: 0.1em;
+        /* position: absolute;
+        right: 1em; */
         height: 80px;
         width: 90px;
     }
 
     #nav-toggle {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 8%;
         border: solid 2px rgb(47, 47, 165);
         border-radius: 10%;
         width: 100%;
@@ -112,10 +125,10 @@ main > h1 {
     }
 
     .burger {
-        height: 33%;
+        height: 16%;
+        width: 90%;
         background-color: rgb(47, 47, 165);
-        margin: 8% 6%;
-        border: 1px solid rgb(47, 47, 165);
+        border: 1% solid rgb(47, 47, 165);
         border-radius: 20%;
     }
 
@@ -125,6 +138,8 @@ main > h1 {
 
     #menu:checked ~ .nav-items {
         display: block;
+        position: relative;
+        z-index: 10;
         padding: 0;
         text-align: center;
         margin: 0;
@@ -155,9 +170,9 @@ main > h1 {
 
 /* Cause the nav-toggle button and header text to shrink below a certain screen width */
 
-@media all and (max-width: 459px) {
+/* @media all and (max-width: 459px) {
 
-    #primary-nav {
+    #nav-dropdown {
         width: 15vw;
         height: 13vw;
         top: 1vw;
@@ -174,7 +189,7 @@ main > h1 {
         font-size: 0.8em;
     }
 
-}
+} */
 
 /* Set the background for the page header and footer, as well as the body */
 
@@ -189,6 +204,10 @@ body {
 /* Set the layout for the medium-width page */
  
 @media all and (min-width: 660px) {
+
+    #nav-dropdown {
+        display: none;
+    }
 
     body {
        grid-template-columns: auto;
@@ -220,15 +239,11 @@ body {
         padding: 0;
         display: flex;
         justify-content: space-between;
-        margin-right: 2%;
+        /* margin-right: 2%; */
     }
 
     #primary-nav li {
         padding: 0.5em 0;
-    }
-
-    .square-image-container {
-        width: 98%;
     }
 
     /* apply the same link colors from the secondary nav to the primary nav */
