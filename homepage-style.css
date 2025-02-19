@@ -48,35 +48,82 @@ body {
         "foot";     
  }
 
- aside, footer {
+ aside, footer, main h1 {
     text-align: center;
  }
 
- /* Set default behavior for images, card links, and nav items */
+ /* Set font of message */
+
+ .welcome-message p {
+    font-family: Anggota;
+    font-size: 1.5em;
+    padding: 0 5%;
+    text-align: center;
+ }
+
+ /* Set default behavior for post cards and post card items */
+
+ #card-deck {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    max-width: 400px;
+ }
+
+.post-card {
+    width: 100%;
+}
+
+.post-card a {
+    text-decoration: none;
+    color: black;
+ }
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.219);
+    border-radius: 0 0 1em 1em;
+}
 
 .post-card-img {
     min-width: 0px;
     width: 100%; 
     height: auto;
+    border-radius: 1em 1em 0 0;
+ }
+
+ .post-card .image-container {
+    display: flex;
  }
 
  .square-image-container {
     display: flex;
     background-color: rgba(215, 0, 215, 30%);
     box-shadow: inset 0px 0px 0.5em 0.5em rgba(215, 0, 215, 30%);
+    border-radius: 1em 1em 0 0;
     justify-content: center;
+    
 }
 
 .square-image {
     min-width: 0px;
-    width: 50%;
-    height: auto;
+    width: auto;
+    height: 225.1px;
 }
 
- .post-card a {
-    text-decoration: none;
-    color: black;
- }
+.card-text h2 {
+    margin: 0;
+}
+
+.card-text p {
+    margin: 0 0 0.5em 0;
+}
+
+/* Set behavior for nav items */
 
 #primary-nav li {
     list-style: none;
@@ -106,9 +153,9 @@ body {
        column-gap: 0.5em;
        grid-template-rows: auto auto auto auto auto auto auto;    
        grid-template-areas: 
-          "head" 
+          "head"
+          "message" 
           "nav"
-          "message"
           "main"
           "aside"
           "foot";
@@ -120,9 +167,6 @@ body {
 
     #primary-nav {
         background-color: rgb(215, 250, 244);
-    }
-
-    #primary-nav {
         position: sticky;
         top: 0;
     }
@@ -130,12 +174,27 @@ body {
     .nav-items {
         padding: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         /* margin-right: 2%; */
     }
 
     #primary-nav li {
         padding: 0.5em 0;
+    }
+
+    /* Set behavior for medium layout of postcards */
+
+    #card-deck {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2em;
+        max-width: 100%;
+     }
+    
+    .post-card {
+        max-width: 400px;
     }
 
     /* apply the same link colors from the secondary nav to the primary nav */
