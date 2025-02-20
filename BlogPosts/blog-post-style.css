@@ -62,21 +62,6 @@ body {
     list-style: none;
  }
 
- nav a {
-    text-decoration: none;
-    color: black
- }
-
-/* Set the background for the page header and footer, as well as the body */
-
-.page-header, footer {
-    background: linear-gradient(aqua,blue);
-}
-
-body {
-    background-color: rgb(215, 250, 244);
-}
-
 /* Set the default styling for main content, including article, img, and p elements */
 
 article h1 {
@@ -163,7 +148,6 @@ aside {
 #email-signup-box input[type=submit] {
     width: 6.5em;
     margin: 0.5em auto;
-    background-color: rgb(109, 109, 250);
     border: none;
     border-radius: 0.5em;
     
@@ -207,15 +191,8 @@ aside {
     /* apply the same link colors from the secondary nav to the primary nav */
 
     #primary-nav a {
-        background-color: aqua;
         border-radius: 0.2em;
-        color: black;
         padding: 1em;
-    }
-    
-    #primary-nav a:hover {
-        background-color: rgba(247, 214, 142, 0.884);
-        color: rgb(57, 58, 59);
     }
 
     /* stick the email signup box to the viewport when it is on the side */
@@ -248,9 +225,9 @@ aside {
     }
     
     #email-signup-box input[type=submit] {
+        background-color: rgba(200, 255, 255, 55%);
         width: 6.5em;
         margin: 0.5em auto;
-        background-color: rgba(200, 255, 255, 55%);
         border: none;
         border-radius: 0.5em;
     }
