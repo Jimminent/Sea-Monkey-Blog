@@ -1,9 +1,10 @@
 /* Sections:
     COLORS
     NAV DROPDOWN
-    LAYOUT */
+    LAYOUT 
+*/
 
-/* COLORS */
+/* ---------------- COLORS ---------------- */
 
 body {
     background-color: rgb(215, 250, 244);
@@ -16,16 +17,11 @@ body {
 nav a {
     text-decoration: none;
     color: black
- }
-
-#primary-nav a {
-    background-color: aqua;
-    color: black;
 }
 
-#primary-nav a:hover {
-    background-color: rgba(247, 214, 142, 0.884);
-    color: rgb(57, 58, 59);
+.square-image-container {
+    background-color: rgba(215, 0, 215, 30%);
+    box-shadow: inset 0px 0px 0.5em 0.5em rgba(215, 0, 215, 30%);
 }
 
 #email-signup-box input[type=submit] {
@@ -34,9 +30,22 @@ nav a {
 
 @media all and (min-width: 660px) {
 
+    #primary-nav {
+        background-color: rgb(215, 250, 244);
+    }
+
+    #primary-nav a {
+        background-color: aqua;
+        color: black;
+    }
+    
+    #primary-nav a:hover {
+        background-color: rgba(247, 214, 142, 0.884);
+        color: rgb(57, 58, 59);
+    }
 }
 
-/* NAV DROPDOWN */
+/* ---------------- NAV DROPDOWN ---------------- */
 
 /* Create a dropdown box for the mobile nav section */
 
@@ -83,7 +92,6 @@ nav a {
         height: 16%;
         width: 90%;
         background-color: rgb(47, 47, 165);
-        border: 1% solid rgb(47, 47, 165);
         border-radius: 20%;
     }
 
@@ -127,6 +135,115 @@ nav a {
 
     #nav-dropdown {
         display: none;
+    }
+
+}
+
+/* ---------------- LAYOUT ---------------- */
+
+/* Name the grid items for proper website layout */
+
+.page-header {
+    grid-area: head;
+}
+
+#primary-nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: foot;
+}
+
+/* Set the default layout of the page (mobile) */
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+aside, footer {
+    text-align: center;
+}
+
+.square-image-container {
+    display: flex;
+    justify-content: center; 
+}
+
+@media all and (min-width: 660px) {
+
+    .nav-items {
+        justify-content: center;
+        gap: 10%;
+    }
+
+}
+
+@media all and (min-width: 900px) {
+
+    #primary-nav a {
+        display: block;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5em;
+        margin: 0 0 0 0.5em;
+    }
+
+}
+
+/* ---------------- BEHAVIOR ---------------- */
+
+#primary-nav li {
+    list-style: none;
+}
+
+.square-image {
+    min-width: 0px;
+}
+
+aside {
+    font-size: larger;
+}
+
+#email-signup-box input[type=submit] {
+    width: 6.5em;
+    margin: 0.5em auto;
+    border: none;
+    border-radius: 0.5em;
+}
+
+@media all and (min-width: 660px) {
+    .page-header {
+        text-align: center;
+    }
+
+    .nav-items {
+        padding: 0;
+        display: flex;
+    }  
+
+    #primary-nav li {
+        padding: 0.25em 0;
+    }
+
+    #primary-nav a {
+        border-radius: 0.5em;
+        padding: 1em;
     }
 
 }

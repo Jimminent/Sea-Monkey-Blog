@@ -5,36 +5,11 @@
     font-family: 'Comic Sans MS', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Name the grid items for proper website layout */
 
-.page-header {
-    grid-area: head;
-}
-
-#primary-nav {
-    grid-area: nav;
-}
-
-main {
-    grid-area: main;
-}
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: foot;
-}
 
 /* Set the default layout of the blog-post page (mobile) */
 
 body {
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
         "head"
@@ -43,23 +18,15 @@ body {
         "foot";     
  }
 
- aside, footer {
-    text-align: center;
- }
+/* Set default behavior for images, paragraphs, article header, and nav items */
 
- /* Set default behavior for images, paragraphs, article header, and nav items */
-
- p {
+p {
     padding-left: 0.5em;
     padding-right: 0.5em;
- }
+}
 
  article h1 {
     padding-left: 0.25em;
- }
-
- #primary-nav li {
-    list-style: none;
  }
 
 /* Set the default styling for main content, including article, img, and p elements */
@@ -84,15 +51,10 @@ article h1 {
  }
 
 .square-image-container {
-    display: flex;
-    background-color: rgba(215, 0, 215, 30%);
-    box-shadow: inset 0px 0px 0.5em 0.5em rgba(215, 0, 215, 30%);
     border-radius: 0.25em 0.25em 0 0;
-    justify-content: center;
 }
 
 .square-image {
-    min-width: 0px;
     width: 50%;
     height: auto;
 }
@@ -137,22 +99,6 @@ article {
     color: rgb(57, 58, 59);
 }
 
-/* Increase the font size for the aside */
-
-aside {
-    font-size: larger;
-}
-
-/* style the submit button for the email signup */
-
-#email-signup-box input[type=submit] {
-    width: 6.5em;
-    margin: 0.5em auto;
-    border: none;
-    border-radius: 0.5em;
-    
-}
-
 /* Set the layout for the medium-width page */
  
 @media all and (min-width: 660px) {
@@ -169,30 +115,12 @@ aside {
           "foot foot";
     }
 
-    .page-header {
-        text-align: center;
-    }
-
     .nav-items {
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
         margin-right: 2%;
-    }
-
-    #primary-nav li {
-        padding: 0.5em 0;
     }
 
     .square-image-container {
         width: 98%;
-    }
-
-    /* apply the same link colors from the secondary nav to the primary nav */
-
-    #primary-nav a {
-        border-radius: 0.2em;
-        padding: 1em;
     }
 
     /* stick the email signup box to the viewport when it is on the side */
@@ -258,17 +186,6 @@ aside {
 
     aside {
         margin-right: auto;
-    }
-
-    #primary-nav a {
-        display: block;
-    }
-
-    .nav-items {
-        display: flex;
-        flex-direction: column;
-        row-gap: 0.5em;
-        margin: 0 0 0 0.5em;
     }
 
     aside {

@@ -7,38 +7,13 @@
 
 /* Name the grid items for proper website layout */
 
-.page-header {
-    grid-area: head;
-}
-
-#primary-nav {
-    grid-area: nav;
-}
-
 .welcome-message {
     grid-area: message;
-}
-
-main {
-    grid-area: main;
-}
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: foot;
 }
 
 /* Set the default layout of the home page (mobile) */
 
 body {
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
         "head"
@@ -48,7 +23,7 @@ body {
         "foot";     
 }
 
-aside, footer, main h1 {
+main h1 {
     text-align: center;
 }
 
@@ -98,19 +73,14 @@ aside, footer, main h1 {
 
 .post-card .image-container {
     display: flex;
+    border-radius: 1em;
 }
 
 .square-image-container {
-    display: flex;
-    background-color: rgba(215, 0, 215, 30%);
-    box-shadow: inset 0px 0px 0.5em 0.5em rgba(215, 0, 215, 30%);
     border-radius: 1em 1em 0 0;
-    justify-content: center;
-    
 }
 
 .square-image {
-    min-width: 0px;
     width: auto;
     height: 225.1px;
 }
@@ -121,27 +91,6 @@ aside, footer, main h1 {
 
 .card-text p {
     margin: 0 0 0.5em 0;
-}
-
-/* Set behavior for nav items */
-
-#primary-nav li {
-    list-style: none;
-}
-
-nav a {
-    text-decoration: none;
-    color: black
-}
-
-/* Set the background for the page header and footer, as well as the body */
-
-.page-header, footer {
-    background: linear-gradient(aqua,blue);
-}
-
-body {
-    background-color: rgb(215, 250, 244);
 }
 
 /* Set the layout for the medium-width page */
@@ -161,26 +110,11 @@ body {
           "foot";
     }
 
-    .page-header {
-        text-align: center;
-    }
-
     #primary-nav {
-        background-color: rgb(215, 250, 244);
         position: sticky;
         top: 0;
     }
 
-    .nav-items {
-        padding: 0;
-        display: flex;
-        justify-content: space-around;
-        /* margin-right: 2%; */
-    }
-
-    #primary-nav li {
-        padding: 0.5em 0;
-    }
 
     /* Set behavior for medium layout of postcards */
 
@@ -197,16 +131,19 @@ body {
         max-width: 400px;
     }
 
-    /* apply the same link colors from the secondary nav to the primary nav */
+}
 
-    #primary-nav a {
-        border-radius: 0.2em;
-        padding: 1em;
-    }
-    
-    #primary-nav a:hover {
-        background-color: rgba(247, 214, 142, 0.884);
-        color: rgb(57, 58, 59);
+@media all and (min-width: 900px) {
+
+    body {
+       grid-template-columns: minmax(auto,340px) auto auto;
+       grid-template-rows: auto auto auto auto auto;    
+       grid-template-areas: 
+          "head head head"
+          "message message message"
+          "nav main main"
+          ". aside aside"
+          "foot foot foot";
     }
 
 }
