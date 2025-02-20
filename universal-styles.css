@@ -31,10 +31,10 @@ nav a {
 @media all and (min-width: 660px) {
 
     #primary-nav {
-        background-color: rgb(215, 250, 244);
+        background-color: transparent;
     }
 
-    #primary-nav a {
+    .nav-items a {
         background-color: aqua;
         color: black;
     }
@@ -171,6 +171,7 @@ body {
     margin: 0;
     display: grid;
     grid-template-columns: auto;
+    min-height: 100vh;
 }
 
 aside, footer {
