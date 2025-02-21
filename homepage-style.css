@@ -24,8 +24,14 @@ body {
         "foot";     
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 main h1 {
     text-align: center;
+    flex: 0 0 1;
 }
 
 /* Set style for current page nav link */
@@ -36,19 +42,20 @@ li[href="#"] , #primary-nav a[href="#"] {
 
 /* Set font of message */
 
-.welcome-message p {
+.welcome-message h2 {
     font-family: Anggota;
-    font-size: 1.5em;
     padding: 0 5%;
     text-align: center;
+    font-weight: normal;
 }
 
  /* Set default behavior for post cards and post card items */
 
 #card-deck {
-    margin: 0 auto;
+    flex: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 2em;
     max-width: 400px;
@@ -89,7 +96,7 @@ li[href="#"] , #primary-nav a[href="#"] {
 
 .square-image {
     width: auto;
-    height: 225.1px;
+    height: 202.583px;
 }
 
 .card-text h2 {
@@ -143,7 +150,7 @@ li[href="#"] , #primary-nav a[href="#"] {
 @media all and (min-width: 900px) {
 
     body {
-       grid-template-columns: minmax(auto, 340px) minmax(85%, auto);
+       grid-template-columns: minmax(auto, 340px) minmax(80%, auto);
        grid-template-rows: auto auto 1fr auto auto;
        grid-template-areas: 
           "head head"
@@ -151,6 +158,31 @@ li[href="#"] , #primary-nav a[href="#"] {
           "nav main"
           ". aside"
           "foot foot";
+    }
+
+    .page-header h1 {
+        grid-area: title;
+    }
+
+    .page-header {
+        display: grid;
+        grid-template-columns: minmax(auto, 340px) minmax(80%, auto);
+        grid-template-rows: auto;
+        grid-template-areas: 
+          ". title"
+    }
+
+    .welcome-message > *  {
+        grid-area: subtitle;
+        text-align: center;
+    }
+
+    .welcome-message {
+        display: grid;
+        grid-template-columns: minmax(auto, 340px) minmax(80%, auto);
+        grid-template-rows: auto;
+        grid-template-areas: 
+          ". subtitle"
     }
 
 }
