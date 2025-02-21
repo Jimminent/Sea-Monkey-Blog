@@ -88,11 +88,19 @@ nav a {
         background-color: aqua;
     }
 
+    label ~ ul {
+        background-color: aqua;
+    }
+
     .burger {
         height: 16%;
         width: 90%;
         background-color: rgb(47, 47, 165);
         border-radius: 20%;
+    }
+
+    #primary-nav {
+        display: none;
     }
 
     .nav-items {
@@ -113,6 +121,7 @@ nav a {
     .nav-items li {
         background-color: aqua;
         padding: 5px 0;
+        border-radius: 0.25em;
     }
 
     .nav-items li:hover {
