@@ -150,17 +150,22 @@ li[href="#"] , #primary-nav a[href="#"] {
 @media all and (min-width: 900px) {
 
     body {
-       grid-template-columns: minmax(auto, 340px) minmax(80%, auto);
+       grid-template-columns: 1fr 3fr 1fr;
        grid-template-rows: auto auto 1fr auto auto;
        grid-template-areas: 
-          "head head"
-          "message message"
-          "nav main"
-          ". aside"
-          "foot foot";
+          "head head head"
+          "message message message"
+          "nav main ."
+          "aside aside aside"
+          "foot foot foot";
     }
 
-    .page-header h1 {
+    #primary-nav {
+        width: 20vw;
+        max-width: 340px;
+    }
+
+    /* .page-header h1 {
         grid-area: title;
     }
 
@@ -183,6 +188,6 @@ li[href="#"] , #primary-nav a[href="#"] {
         grid-template-rows: auto;
         grid-template-areas: 
           ". subtitle"
-    }
+    } */
 
 }
