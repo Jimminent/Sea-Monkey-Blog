@@ -49,7 +49,27 @@ li[href="#"] , #primary-nav a[href="#"] {
     font-weight: normal;
 }
 
- /* Set default behavior for post cards and post card items */
+.donate-main-content p, .donate-main-content em, .donate-main-content strong {
+    font-family: Anggota;
+}
+
+.donate-main-content strong, .donate-main-content p {
+    font-size: 1.5em;
+}
+
+.donate-main-content p {
+    max-width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.donate-main-content {
+    justify-content: center;
+}
+
+
+/* Set default behavior for post cards and post card items */
 
 #card-deck {
     flex: auto;
