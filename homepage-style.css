@@ -24,11 +24,6 @@ body {
         "foot";     
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-}
-
 main h1 {
     text-align: center;
     flex: 0 0 1;
@@ -92,9 +87,10 @@ li[href="#"] , #primary-nav a[href="#"] {
 /* Set default behavior for post cards and post card items */
 
 #card-deck {
+    margin: 0 auto;
     flex: auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2em;
@@ -173,11 +169,6 @@ li[href="#"] , #primary-nav a[href="#"] {
     /* Set behavior for medium layout of postcards */
 
     #card-deck {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 2em;
         max-width: 100%;
      }
     
