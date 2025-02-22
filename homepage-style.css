@@ -53,6 +53,8 @@ li[href="#"] , #primary-nav a[href="#"] {
     font-size: 1.5em;
 }
 
+/* Set rules for donation page main content */
+
 .donate-main-content * {
     font-family: Anggota;
     padding: 0 0.5em
@@ -81,6 +83,26 @@ li[href="#"] , #primary-nav a[href="#"] {
 
 .donate-main-content {
     justify-content: center;
+}
+
+/* set rules for posts page main content */
+
+.year h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.month {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.month h2:first-of-type {
+    margin-top: 0;
+}
+
+.post-entries a {
+    color: black;
 }
 
 
