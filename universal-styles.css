@@ -1,7 +1,8 @@
 /* Sections:
-    COLORS
-    NAV DROPDOWN
-    LAYOUT 
+    1. COLORS 
+    2. NAV DROPDOWN 
+    3. LAYOUTS 
+    4. BEHAVIORS 
 */
 
 /* ---------------- COLORS ---------------- */
@@ -148,7 +149,7 @@ nav a {
 
 }
 
-/* ---------------- LAYOUT ---------------- */
+/* ---------------- LAYOUTS ---------------- */
 
 /* Name the grid items for proper website layout */
 
@@ -216,7 +217,7 @@ aside, footer {
 
 }
 
-/* ---------------- BEHAVIOR ---------------- */
+/* ---------------- BEHAVIORS ---------------- */
 
 #primary-nav li {
     list-style: none;
