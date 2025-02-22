@@ -59,7 +59,7 @@ article h1 {
     height: auto;
 }
 
-article p, article p em {
+article p, article p em, article p strong {
     font-family: Anggota;
 }
 
