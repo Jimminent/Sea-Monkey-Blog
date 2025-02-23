@@ -23,15 +23,23 @@ p {
     padding-right: 0.5em;
 }
 
- article h1 {
-    padding-left: 0.25em;
- }
+.article-head {
+    text-align: center;
+}
+
+.article-head h1 {
+    margin: 0;
+}
 
 /* Set the default styling for main content, including article, img, and p elements */
 
-article h1 {
+.article-head h1 {
     font-size: 2.5em;
-    align-self: center;
+}
+
+.article-head p {
+    margin: auto 0;
+    padding: 0;
 }
 
 .date {
