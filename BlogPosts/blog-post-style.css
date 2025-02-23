@@ -65,7 +65,7 @@ p {
     height: auto;
 }
 
-article p, article p em, article p strong {
+.meat p, .meat p em, .meat strong {
     font-family: Anggota;
 }
 
