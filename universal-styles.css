@@ -9,8 +9,16 @@
 /* ---------------- FONTS ---------------- */
 
 /* free-to-use custom font: Anggota */
-@font-face { font-family: Anggota; src: url('/media/fonts/a-anggota-font/Anggota-d9v9E.otf'); }
+@font-face { 
+    font-family: Anggota;
+    src: url('/media/fonts/a-anggota-font/Anggota-d9v9E.otf'); 
+}
 
+/* free-to-use custom font: Chelsea Market */
+@font-face {
+    font-family: Chelsea-Market;
+    src: url(/media/fonts/chelsea-market/ChelseaMarket-Regular.ttf);
+}
 
 
 /* ---------------- COLORS ---------------- */
