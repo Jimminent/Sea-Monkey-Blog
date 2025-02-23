@@ -82,7 +82,7 @@ li[href="#"] , #primary-nav a[href="#"] {
     justify-content: center;
 }
 
-.textual-main-content em {
+.textual-main-content em, .textual-main-content a, .textual-main-content strong {
     padding: 0;
 }
 
