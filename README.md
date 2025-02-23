@@ -1,4 +1,4 @@
-# Sea-Monkey-Blog
+# About the Sea-Monkey-Blog
 I built this website in order to cement my knowledge of HTML and CSS 
 after a web development course at Western Governor's University. 
 I loved learning about the fundamentals, but I felt like I would lose 
