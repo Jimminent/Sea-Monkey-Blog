@@ -12,7 +12,7 @@ completely JavaScript-free (it took some research and a LOT of trial
 and error). All-in-all, it was a fun challenge! 
 
 A quick explanation for my commits:
-I have a terrible daily schedule: Monday through Friday I am up from 
+I have a terrible daily schedule. Monday through Friday I am up from 
 8am to 3am the next day, being a full-time father during the day and 
 working a night job from 5:30pm to 2am. It is only after my shift 
 that I have the time to focus on this project. I often work until I 
