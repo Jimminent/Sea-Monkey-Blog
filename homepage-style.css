@@ -1,6 +1,3 @@
-/* Add a free-to-use custom font to the webpage */
-@font-face { font-family: Anggota; src: url('../media/a-anggota-font/Anggota-d9v9E.otf'); } 
-
 * {
     font-family: 'Comic Sans MS', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -53,36 +50,40 @@ li[href="#"] , #primary-nav a[href="#"] {
     font-size: 1.5em;
 }
 
-/* Set rules for donation page main content */
+/* Set rules for pages with exclusively textual main content */
 
-.donate-main-content * {
+.textual-main-content * {
     font-family: Anggota;
     padding: 0 0.5em
 }
 
-.donate-main-content strong, .donate-main-content p {
+.textual-main-content strong, .textual-main-content p {
     font-size: 1.5em;
 }
 
-.donate-main-content h1 {
+.textual-main-content h1 {
     font-size: 5em;
     margin-top: 2%;
     margin-bottom: 0;
 }
 
-.donate-main-content p:first-of-type {
+.textual-main-content h1 ~ p:first-of-type {
     margin-top: 0;
 }
 
-.donate-main-content p {
+.textual-main-content p {
     max-width: 1000px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.donate-main-content {
+.textual-main-content {
     justify-content: center;
+}
+
+.textual-main-content em {
+    padding: 0;
 }
 
 /* set rules for posts page main content */

@@ -1,9 +1,17 @@
 /* Sections:
-    1. COLORS 
-    2. NAV DROPDOWN 
-    3. LAYOUTS 
-    4. BEHAVIORS 
+    1. FONTS
+    2. COLORS 
+    3. NAV DROPDOWN 
+    4. LAYOUTS 
+    5. BEHAVIORS 
 */
+
+/* ---------------- FONTS ---------------- */
+
+/* free-to-use custom font: Anggota */
+@font-face { font-family: Anggota; src: url('/media/fonts/a-anggota-font/Anggota-d9v9E.otf'); }
+
+
 
 /* ---------------- COLORS ---------------- */
 

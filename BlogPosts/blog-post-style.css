@@ -1,5 +1,3 @@
-/* Add a free-to-use custom font to the webpage */
-@font-face { font-family: Anggota; src: url('../media/a-anggota-font/Anggota-d9v9E.otf'); } 
 
 * {
     font-family: 'Comic Sans MS', Calibri, 'Trebuchet MS', sans-serif;
