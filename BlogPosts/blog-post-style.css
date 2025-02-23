@@ -195,7 +195,7 @@ article {
 
     .nav-items {
         position: sticky;
-        top: 0em;
+        top: 0.25em;
     }
 
     #email-signup-box {
