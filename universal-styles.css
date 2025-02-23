@@ -216,6 +216,10 @@ aside, footer {
         display: block;
     }
 
+    #primary-nav {
+        margin-top: 0.25em;
+    }
+
     .nav-items {
         display: flex;
         flex-direction: column;
