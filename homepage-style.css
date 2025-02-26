@@ -117,7 +117,6 @@ li[href="#"] , #primary-nav a[href="#"] {
 
 .post-entries a:active {
     color: aqua;
-    text-shadow: 1px 1px 3px black;
 }
 
 
