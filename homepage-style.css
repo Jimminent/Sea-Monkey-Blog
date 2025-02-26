@@ -111,6 +111,15 @@ li[href="#"] , #primary-nav a[href="#"] {
     color: black;
 }
 
+.post-entries a:hover {
+    text-shadow: 1px 1px 3px rgba(247, 214, 142, 0.884);
+}
+
+.post-entries a:active {
+    color: aqua;
+    text-shadow: 1px 1px 3px black;
+}
+
 
 /* Set default behavior for post cards and post card items */
 
