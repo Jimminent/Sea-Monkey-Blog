@@ -143,6 +143,7 @@ article {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        border-radius: 0.5em;
     }
 
     #email-signup-box label {
