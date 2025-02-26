@@ -96,10 +96,15 @@ li[href="#"] , #primary-nav a[href="#"] {
 .month {
     max-width: 500px;
     margin: 0 auto;
+    padding-left: 0.25em;
 }
 
 .month h2:first-of-type {
     margin-top: 0;
+}
+
+.post-entries li {
+    padding: 0.25em 0;
 }
 
 .post-entries a {
