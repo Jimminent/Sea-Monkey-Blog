@@ -86,6 +86,19 @@ li[href="#"] , #primary-nav a[href="#"] {
     padding: 0;
 }
 
+.textual-main-content a {
+    color: blue;
+}
+
+.textual-main-content a:hover {
+    color: black;
+    text-shadow: 1px 1px 3px rgba(247, 214, 142, 0.884);
+}
+
+.textual-main-content a:active {
+    color: aqua;
+}
+
 /* set rules for posts page main content */
 
 .year h1 {
