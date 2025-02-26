@@ -89,7 +89,6 @@ article p, article p em, article p strong {
 
 article {
     background-color: rgba(200, 255, 255, 55%);
-    box-shadow: inset 0px 0px 10px 10px rgba(200, 255, 255, 55%);
     border-radius: 0.5em;
     color: black;
 }
