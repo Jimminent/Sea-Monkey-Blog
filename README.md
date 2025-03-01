@@ -1,4 +1,9 @@
 # About the Sea-Monkey-Blog
+As a standard rule, this repository has two permanent branches:
+"main" -- all work should be done here.
+"live" -- this branch is published on GitHub Pages and is regularly behind main. The live branch is only updated via merging from main as updates become ready for publishing.
+I chose to set this rule because, as the sole contributor to this repository, it is easier for me to treat main as a workstation than a publishing platform. I only need to update the live website once every week or two. If I ever need to work on an experimental feature, I can create another branch.
+
 I built this website in order to cement my knowledge of HTML and CSS 
 after a web development course at Western Governor's University. 
 I loved learning about the fundamentals, but I felt like I would lose 
