@@ -65,6 +65,12 @@ p {
     height: auto;
 }
 
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .meat p, .meat p em, .meat strong {
     font-family: Anggota;
 }
