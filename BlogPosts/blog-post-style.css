@@ -50,6 +50,10 @@ p {
     text-align: justify;
 }
 
+img {
+    border-radius: 0.3em;
+}
+
 .article-image {
     min-width: 0px;
     width: 98%; 
