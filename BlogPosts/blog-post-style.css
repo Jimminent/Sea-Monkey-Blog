@@ -56,7 +56,7 @@ p {
     height: auto;
  }
 
-.square-image-container {
+.purple-image-container {
     border-radius: 0.25em;
 }
 
@@ -129,7 +129,7 @@ article {
         margin-right: 2%;
     }
 
-    .square-image-container {
+    .purple-image-container {
         width: 98%;
     }
 
@@ -225,7 +225,7 @@ article {
 
     /* Modify behavior for the images to take up the full width of the article */
 
-    .article-image, .square-image-container {
+    .article-image, .purple-image-container {
         width: 100%;
     }
 

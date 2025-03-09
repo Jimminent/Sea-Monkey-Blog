@@ -36,7 +36,7 @@ nav a {
     color: black
 }
 
-.square-image-container {
+.purple-image-container {
     background-color: rgba(215, 0, 215, 30%);
     box-shadow: inset 0px 0px 0.5em 0.5em rgba(215, 0, 215, 30%);
 }
@@ -204,7 +204,7 @@ aside, footer {
     text-align: center;
 }
 
-.square-image-container {
+.purple-image-container {
     display: flex;
     justify-content: center; 
 }
