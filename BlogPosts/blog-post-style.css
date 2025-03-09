@@ -90,6 +90,12 @@ p {
     
 }
 
+#secondary-nav > a[onclick="return false"], 
+#secondary-nav > a[onclick="return false"]:hover {
+    background-color: rgb(153, 221, 221);
+    color: dimgray;
+}
+
 /* Set backgrounds and borders for the main article and navs */
 
 article {
